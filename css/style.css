@@ -1,0 +1,200 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  /* Pattern from subtle patterns in compliance with their license */
+  background: url(http://subtlepatterns.com/patterns/skulls.png);
+  
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.page-wrap{
+  width: 85%;
+  margin: 20px auto;
+}
+
+.title{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100%;
+}
+
+.grid{
+  overflow: hidden;
+  padding-left: 10%;
+}
+.col{
+  float: left;
+  padding-right: 10%;
+}
+.col-1-2{
+  width: 50%;
+  min-width: 40%;
+}
+
+.col-1{
+  width: 100%;
+}
+
+.list{
+  
+}
+
+.list-row{
+  float: left;
+  padding: 5px 15px;
+}
+
+.list-title{
+  text-align: center;
+  padding: 15px;
+  background: rgba(168,205,27,0.7);
+  
+  -moz-border-radius: 5px 5px 0px 0px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
+  -khtml-border-radius: 5px 5px 0px 0px;
+}
+.list-row{
+  padding 15px;
+}
+.odd{
+  background: rgba(156,194,14,0.3);
+}
+.even{
+  background: rgba(156,194,14,0.5);
+}
+
+.score{
+  text-align: right;
+}
+
+.row{
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  
+  font-family: 'Ubuntu', sans-serif;
+  font-color: #9CC20E;
+  font-size: 1.1em;
+  text-shadow: 1px 1px #545E2E;
+  color: #F2F2DB;
+}
+
+.drag-zone{
+  border: #545E2E dashed 3px;
+  background: rgba(156,194,14,0.5);
+  
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -khtml-border-radius: 5px;
+}
+
+.info{
+  margin: 0px;
+}
+
+.btn{
+  border: none;  
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -khtml-border-radius: 5px;
+  
+  background: -moz-linear-gradient(top,  rgba(168,205,27,0.8) 24%, rgba(168,205,27,0.8) 41%, rgba(156,194,14,0.8) 62%, rgba(156,194,14,0.8) 98%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(24%,rgba(168,205,27,0.8)), color-stop(41%,rgba(168,205,27,0.8)), color-stop(62%,rgba(156,194,14,0.8)), color-stop(98%,rgba(156,194,14,0.8))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(168,205,27,0.8) 24%,rgba(168,205,27,0.8) 41%,rgba(156,194,14,0.8) 62%,rgba(156,194,14,0.8) 98%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(168,205,27,0.8) 24%,rgba(168,205,27,0.8) 41%,rgba(156,194,14,0.8) 62%,rgba(156,194,14,0.8) 98%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(168,205,27,0.8) 24%,rgba(168,205,27,0.8) 41%,rgba(156,194,14,0.8) 62%,rgba(156,194,14,0.8) 98%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(168,205,27,0.8) 24%,rgba(168,205,27,0.8) 41%,rgba(156,194,14,0.8) 62%,rgba(156,194,14,0.8) 98%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cca8cd1b', endColorstr='#cc9cc20e',GradientType=0 ); /* IE6-9 */
+}
+.btn:hover{
+  background: -moz-linear-gradient(top,  rgba(185,221,39,0.8) 24%, rgba(185,221,39,0.8) 41%, rgba(175,217,21,0.8) 62%, rgba(175,217,21,0.8) 98%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(24%,rgba(185,221,39,0.8)), color-stop(41%,rgba(185,221,39,0.8)), color-stop(62%,rgba(175,217,21,0.8)), color-stop(98%,rgba(175,217,21,0.8))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(185,221,39,0.8) 24%,rgba(185,221,39,0.8) 41%,rgba(175,217,21,0.8) 62%,rgba(175,217,21,0.8) 98%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(185,221,39,0.8) 24%,rgba(185,221,39,0.8) 41%,rgba(175,217,21,0.8) 62%,rgba(175,217,21,0.8) 98%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(185,221,39,0.8) 24%,rgba(185,221,39,0.8) 41%,rgba(175,217,21,0.8) 62%,rgba(175,217,21,0.8) 98%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(185,221,39,0.8) 24%,rgba(185,221,39,0.8) 41%,rgba(175,217,21,0.8) 62%,rgba(175,217,21,0.8) 98%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccb9dd27', endColorstr='#ccafd915',GradientType=0 ); /* IE6-9 */
+}
+
+.btn:active {
+  background: -moz-linear-gradient(top,  rgba(167,208,18,0.8) 2%, rgba(167,208,18,0.8) 38%, rgba(180,218,30,0.8) 59%, rgba(180,218,30,0.8) 76%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,rgba(167,208,18,0.8)), color-stop(38%,rgba(167,208,18,0.8)), color-stop(59%,rgba(180,218,30,0.8)), color-stop(76%,rgba(180,218,30,0.8))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(167,208,18,0.8) 2%,rgba(167,208,18,0.8) 38%,rgba(180,218,30,0.8) 59%,rgba(180,218,30,0.8) 76%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(167,208,18,0.8) 2%,rgba(167,208,18,0.8) 38%,rgba(180,218,30,0.8) 59%,rgba(180,218,30,0.8) 76%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(167,208,18,0.8) 2%,rgba(167,208,18,0.8) 38%,rgba(180,218,30,0.8) 59%,rgba(180,218,30,0.8) 76%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(167,208,18,0.8) 2%,rgba(167,208,18,0.8) 38%,rgba(180,218,30,0.8) 59%,rgba(180,218,30,0.8) 76%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cca7d012', endColorstr='#ccb4da1e',GradientType=0 ); /* IE6-9 */
+}
+
+.btn-1-3{
+  width: 33.3%;
+  float: left;
+}
+
+.btn-1-2{
+  width: 50%;
+  float: left;
+}
+
+.btn-left {
+  -moz-border-radius: 5px 0px 0px 5px;
+  -webkit-border-radius: 5px 0px 0px 5px;
+  border-radius: 5px 0px 0px 5px;
+  -khtml-border-radius: 5px 0px 0px 5px;
+}
+
+.btn-right {
+  -moz-border-radius: 0px 5px 5px 0px;
+  -webkit-border-radius: 0px 5px 5px 0px;
+  border-radius: 0px 5px 5px 0px;
+  -khtml-border-radius: 0px 5px 5px 0px;
+}
+
+.btn-center {
+   -moz-border-radius: 0px 0px 0px 0px;
+  -webkit-border-radius: 0px 0px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
+  -khtml-border-radius: 0px 0px 0px 0px;
+}
+
+.section{
+  padding: 15px;
+}
+
+.last-section{
+  border-bottom: dashed 1px;
+}
+
+.footer{
+  overflow: hidden;
+  padding-left: 10%;
+}
+
+
+
+p:not(.footer-text, .score){
+  text-align: justify;
+}
+
+.justify{
+  text-align: justify;
+}
+
+.left{
+  
+}
+.right{
+  text-align: right;
+}
+
+
+
